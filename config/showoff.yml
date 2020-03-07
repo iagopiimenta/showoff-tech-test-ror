@@ -1,0 +1,10 @@
+development:  &default
+  client_id: <%= ENV["SHOWOFF_CLIENT"] %>
+  client_secret: <%= ENV["SHOWOFF_CLIENT_SECRET"] %>
+  api_url: <%= ENV["SHOWOFF_API_URL"] %>
+
+test:
+  <<: *default
+
+production:
+  <<: *default
