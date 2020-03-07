@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  app:
+    build: .
+    user: "1000:1000"
+    working_dir: /app
+    volumes:
+      - .:/app:cached
+      - ruby_2_7_0_gems:/gems
+  postgres:
+    image: postgres:12.2-alpine
+  redis:
+    image: redis:5.0.7-alpine3.11
+volumes:
+  ruby_2_7_0_gems:
