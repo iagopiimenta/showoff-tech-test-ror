@@ -52,3 +52,9 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "rubocop", "~> 0.80.1", require: false
+gem "rubocop-rails", "~> 2.4", require: false
+
+gem "rest-client", "~> 2.1"
+gem "oauth2", "~> 1.4"
