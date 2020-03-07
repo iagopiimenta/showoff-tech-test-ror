@@ -1,0 +1,12 @@
+require: rubocop-rails
+
+Layout/IndentationConsistency:
+  EnforcedStyle: indented_internal_methods
+
+Style:
+  Enabled: false
+
+# Style/Documentation:
+#   Enabled: false
+# Style/FrozenStringLiteralComment:
+#   Enabled: false
