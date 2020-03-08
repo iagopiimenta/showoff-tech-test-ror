@@ -58,3 +58,8 @@ gem "rubocop-rails", "~> 2.4", require: false
 
 gem "rest-client", "~> 2.1"
 gem "oauth2", "~> 1.4"
+
+gem "simple_form", "~> 5.0"
+
+gem "faraday", "~> 1.0"
+gem "faraday_middleware", "~> 1.0.0.rc1"
