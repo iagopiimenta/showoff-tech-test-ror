@@ -31,6 +31,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '>= 4.0.0.beta2'
+  gem "webmock", "~> 3.8"
 end
 
 group :development do
@@ -56,8 +58,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "rubocop", "~> 0.80.1", require: false
 gem "rubocop-rails", "~> 2.4", require: false
 
-gem "rest-client", "~> 2.1"
 gem "oauth2", "~> 1.4"
+gem "rest-client", "~> 2.1"
 
 gem "simple_form", "~> 5.0"
 
