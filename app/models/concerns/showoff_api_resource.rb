@@ -7,7 +7,7 @@ module ShowoffApiResource
     end
 
     def create(params)
-      if valid?
+      if valid?(:create)
         self.class.create!(params)
       else
         false
@@ -15,7 +15,7 @@ module ShowoffApiResource
     end
 
     def update(id, params)
-      if valid?
+      if valid?(:update)
         self.class.update!(id, params)
       else
         false
@@ -85,10 +85,12 @@ module ShowoffApiResource
           data.map do |entry|
             klass.new(entry)
           end
-        else
+        elsif klass.is_a?(User)
           klass.new(data).tap do |user|
             user.token = token
           end
+        else
+          klass.new(data)
         end
       end
 
@@ -122,7 +124,7 @@ module ShowoffApiResource
       end
 
       def api_base_url
-        "#{Rails.application.config.x.showoff[:api_url]}/api/v1"
+        Authentication.api_base_url
       end
 
       def check_token_expired

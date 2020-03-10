@@ -1,0 +1,74 @@
+{
+  "code": 0,
+  "message": "Success",
+  "data": {
+    "widgets": [
+      {
+        "id": 1725,
+        "name": "aasassas",
+        "description": "Widget Green 23",
+        "kind": "hidden",
+        "user": {
+          "id": 3424,
+          "name": "A User",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/003/424/small/961-200.png?1583599163",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/003/424/medium/961-200.png?1583599163",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/003/424/large/961-200.png?1583599163",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/003/424/original/961-200.png?1583599163"
+          },
+          "first_name": "A",
+          "last_name": "User",
+          "date_of_birth": null,
+          "email": "michael+2121@showoff.ie",
+          "active": true
+        },
+        "owner": true
+      },
+      {
+        "id": 1724,
+        "name": "A Visible Widget 2",
+        "description": "Widget Green 2",
+        "kind": "visible",
+        "user": {
+          "id": 3424,
+          "name": "A User",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/003/424/small/961-200.png?1583599163",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/003/424/medium/961-200.png?1583599163",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/003/424/large/961-200.png?1583599163",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/003/424/original/961-200.png?1583599163"
+          },
+          "first_name": "A",
+          "last_name": "User",
+          "date_of_birth": null,
+          "email": "michael+2121@showoff.ie",
+          "active": true
+        },
+        "owner": true
+      },
+      {
+        "id": 1723,
+        "name": "A Visible Widget",
+        "description": "Widget Green",
+        "kind": "visible",
+        "user": {
+          "id": 3424,
+          "name": "A User",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/003/424/small/961-200.png?1583599163",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/003/424/medium/961-200.png?1583599163",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/003/424/large/961-200.png?1583599163",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/003/424/original/961-200.png?1583599163"
+          },
+          "first_name": "A",
+          "last_name": "User",
+          "date_of_birth": null,
+          "email": "michael+2121@showoff.ie",
+          "active": true
+        },
+        "owner": true
+      }
+    ]
+  }
+}

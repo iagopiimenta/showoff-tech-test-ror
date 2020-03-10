@@ -10,7 +10,10 @@ class Widget
     HIDDEN = 'hidden'.freeze
   end
 
+  validates :id, presence: true, on: :update
   validates :kind, inclusion: { in: [Kinds::VISIBLE, Kinds::HIDDEN] }
+  validates :owner, inclusion: { in: [true, false] }, allow_blank: true
+  validates :name, :description, presence: true
 
   def user=(user)
     @user = user.is_a?(User) ? user : User.new(user)

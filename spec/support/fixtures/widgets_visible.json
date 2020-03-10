@@ -1,0 +1,388 @@
+{
+  "code": 0,
+  "message": "Success",
+  "data": {
+    "widgets": [
+      {
+        "id": 4,
+        "name": "A Visible Widget",
+        "description": "Widget 1",
+        "kind": "visible",
+        "user": {
+          "id": 1,
+          "name": "tyler Thunderbird",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/001/small/quisvoluptatesquia.png?1549584243",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/001/medium/quisvoluptatesquia.png?1549584243",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/001/large/quisvoluptatesquia.png?1549584243",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/001/original/quisvoluptatesquia.png?1549584243"
+          },
+          "first_name": "tyler",
+          "last_name": "Thunderbird"
+        },
+        "owner": false
+      },
+      {
+        "id": 810,
+        "name": "Theron22",
+        "description": "Widget 1",
+        "kind": "visible",
+        "user": {
+          "id": 1440,
+          "name": "Aaron Gonsalves",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/001/440/small/961-200.png?1580499144",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/001/440/medium/961-200.png?1580499144",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/001/440/large/961-200.png?1580499144",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/001/440/original/961-200.png?1580499144"
+          },
+          "first_name": "Aaron",
+          "last_name": "Gonsalves"
+        },
+        "owner": false
+      },
+      {
+        "id": 120,
+        "name": "A Visible Widget",
+        "description": "Widget 23234",
+        "kind": "visible",
+        "user": {
+          "id": 198,
+          "name": "Ali User",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/198/small/961-200.png?1549731299",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/198/medium/961-200.png?1549731299",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/198/large/961-200.png?1549731299",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/198/original/961-200.png?1549731299"
+          },
+          "first_name": "Ali",
+          "last_name": "User"
+        },
+        "owner": false
+      },
+      {
+        "id": 134,
+        "name": "New Hotness",
+        "description": "I'm visible",
+        "kind": "visible",
+        "user": {
+          "id": 240,
+          "name": "Justa User",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/240/small/2.png?1551703428",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/240/medium/2.png?1551703428",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/240/large/2.png?1551703428",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/240/original/2.png?1551703428"
+          },
+          "first_name": "Justa",
+          "last_name": "User"
+        },
+        "owner": false
+      },
+      {
+        "id": 152,
+        "name": "AJAX",
+        "description": "Widget AJAX",
+        "kind": "visible",
+        "user": {
+          "id": 326,
+          "name": "v m",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/small/961-200.png?1551812453",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/medium/961-200.png?1551812453",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/large/961-200.png?1551812453",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/original/961-200.png?1551812453"
+          },
+          "first_name": "v",
+          "last_name": "m"
+        },
+        "owner": false
+      },
+      {
+        "id": 160,
+        "name": "9 AJAX",
+        "description": "widget description",
+        "kind": "visible",
+        "user": {
+          "id": 326,
+          "name": "v m",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/small/961-200.png?1551812453",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/medium/961-200.png?1551812453",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/large/961-200.png?1551812453",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/original/961-200.png?1551812453"
+          },
+          "first_name": "v",
+          "last_name": "m"
+        },
+        "owner": false
+      },
+      {
+        "id": 161,
+        "name": "10 AJAX",
+        "description": "widget description",
+        "kind": "visible",
+        "user": {
+          "id": 326,
+          "name": "v m",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/small/961-200.png?1551812453",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/medium/961-200.png?1551812453",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/large/961-200.png?1551812453",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/original/961-200.png?1551812453"
+          },
+          "first_name": "v",
+          "last_name": "m"
+        },
+        "owner": false
+      },
+      {
+        "id": 121,
+        "name": "Super Sweet Widget",
+        "description": "So so sweet",
+        "kind": "visible",
+        "user": {
+          "id": 234,
+          "name": "Me Myself",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/234/small/961-200.png?1551641472",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/234/medium/961-200.png?1551641472",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/234/large/961-200.png?1551641472",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/234/original/961-200.png?1551641472"
+          },
+          "first_name": "Me",
+          "last_name": "Myself"
+        },
+        "owner": false
+      },
+      {
+        "id": 133,
+        "name": "New Widgety Widget",
+        "description": "So shiny",
+        "kind": "visible",
+        "user": {
+          "id": 234,
+          "name": "Me Myself",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/234/small/961-200.png?1551641472",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/234/medium/961-200.png?1551641472",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/234/large/961-200.png?1551641472",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/234/original/961-200.png?1551641472"
+          },
+          "first_name": "Me",
+          "last_name": "Myself"
+        },
+        "owner": false
+      },
+      {
+        "id": 162,
+        "name": "showoff4",
+        "description": "widget description4",
+        "kind": "visible",
+        "user": {
+          "id": 326,
+          "name": "v m",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/small/961-200.png?1551812453",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/medium/961-200.png?1551812453",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/large/961-200.png?1551812453",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/original/961-200.png?1551812453"
+          },
+          "first_name": "v",
+          "last_name": "m"
+        },
+        "owner": false
+      },
+      {
+        "id": 135,
+        "name": "New Widgety Widget",
+        "description": "So shiny",
+        "kind": "visible",
+        "user": {
+          "id": 332,
+          "name": "Old Gregg Baileys",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/332/small/2.png?1551978836",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/332/medium/2.png?1551978836",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/332/large/2.png?1551978836",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/332/original/2.png?1551978836"
+          },
+          "first_name": "Old Gregg",
+          "last_name": "Baileys"
+        },
+        "owner": false
+      },
+      {
+        "id": 163,
+        "name": "15 AJAX",
+        "description": "widget description",
+        "kind": "visible",
+        "user": {
+          "id": 326,
+          "name": "v m",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/small/961-200.png?1551812453",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/medium/961-200.png?1551812453",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/large/961-200.png?1551812453",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/original/961-200.png?1551812453"
+          },
+          "first_name": "v",
+          "last_name": "m"
+        },
+        "owner": false
+      },
+      {
+        "id": 164,
+        "name": "13 AJAX",
+        "description": "widget description",
+        "kind": "visible",
+        "user": {
+          "id": 326,
+          "name": "v m",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/small/961-200.png?1551812453",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/medium/961-200.png?1551812453",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/large/961-200.png?1551812453",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/original/961-200.png?1551812453"
+          },
+          "first_name": "v",
+          "last_name": "m"
+        },
+        "owner": false
+      },
+      {
+        "id": 165,
+        "name": "16 AJAX",
+        "description": "widget description",
+        "kind": "visible",
+        "user": {
+          "id": 326,
+          "name": "v m",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/small/961-200.png?1551812453",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/medium/961-200.png?1551812453",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/large/961-200.png?1551812453",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/original/961-200.png?1551812453"
+          },
+          "first_name": "v",
+          "last_name": "m"
+        },
+        "owner": false
+      },
+      {
+        "id": 166,
+        "name": "17 AJAX",
+        "description": "widget description",
+        "kind": "visible",
+        "user": {
+          "id": 326,
+          "name": "v m",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/small/961-200.png?1551812453",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/medium/961-200.png?1551812453",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/large/961-200.png?1551812453",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/original/961-200.png?1551812453"
+          },
+          "first_name": "v",
+          "last_name": "m"
+        },
+        "owner": false
+      },
+      {
+        "id": 167,
+        "name": "24 AJAX",
+        "description": "widget description4",
+        "kind": "visible",
+        "user": {
+          "id": 326,
+          "name": "v m",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/small/961-200.png?1551812453",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/medium/961-200.png?1551812453",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/large/961-200.png?1551812453",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/original/961-200.png?1551812453"
+          },
+          "first_name": "v",
+          "last_name": "m"
+        },
+        "owner": false
+      },
+      {
+        "id": 172,
+        "name": "Vadim Malakhovski",
+        "description": "sgdfg",
+        "kind": "visible",
+        "user": {
+          "id": 313,
+          "name": "v m",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/313/small/961-200.png?1551799649",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/313/medium/961-200.png?1551799649",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/313/large/961-200.png?1551799649",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/313/original/961-200.png?1551799649"
+          },
+          "first_name": "v",
+          "last_name": "m"
+        },
+        "owner": false
+      },
+      {
+        "id": 173,
+        "name": "Vadim Malakhovski dfg",
+        "description": "sgdfg",
+        "kind": "visible",
+        "user": {
+          "id": 313,
+          "name": "v m",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/313/small/961-200.png?1551799649",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/313/medium/961-200.png?1551799649",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/313/large/961-200.png?1551799649",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/313/original/961-200.png?1551799649"
+          },
+          "first_name": "v",
+          "last_name": "m"
+        },
+        "owner": false
+      },
+      {
+        "id": 175,
+        "name": "Edited name",
+        "description": "Edited ",
+        "kind": "visible",
+        "user": {
+          "id": 313,
+          "name": "v m",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/313/small/961-200.png?1551799649",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/313/medium/961-200.png?1551799649",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/313/large/961-200.png?1551799649",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/313/original/961-200.png?1551799649"
+          },
+          "first_name": "v",
+          "last_name": "m"
+        },
+        "owner": false
+      },
+      {
+        "id": 174,
+        "name": "Eddited",
+        "description": "Edited ",
+        "kind": "visible",
+        "user": {
+          "id": 313,
+          "name": "v m",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/313/small/961-200.png?1551799649",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/313/medium/961-200.png?1551799649",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/313/large/961-200.png?1551799649",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/313/original/961-200.png?1551799649"
+          },
+          "first_name": "v",
+          "last_name": "m"
+        },
+        "owner": false
+      }
+    ]
+  }
+}

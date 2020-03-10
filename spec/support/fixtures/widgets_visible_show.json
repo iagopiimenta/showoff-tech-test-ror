@@ -1,0 +1,46 @@
+{
+  "code": 0,
+  "message": "Success",
+  "data": {
+    "widgets": [
+      {
+        "id": 162,
+        "name": "showoff4",
+        "description": "widget description4",
+        "kind": "visible",
+        "user": {
+          "id": 326,
+          "name": "v m",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/small/961-200.png?1551812453",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/medium/961-200.png?1551812453",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/large/961-200.png?1551812453",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/326/original/961-200.png?1551812453"
+          },
+          "first_name": "v",
+          "last_name": "m"
+        },
+        "owner": false
+      },
+      {
+        "id": 180,
+        "name": "showoff2",
+        "description": "widget description4",
+        "kind": "visible",
+        "user": {
+          "id": 338,
+          "name": "Vadim Malakhovski",
+          "images": {
+            "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/338/small/961-200.png?1552035477",
+            "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/338/medium/961-200.png?1552035477",
+            "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/338/large/961-200.png?1552035477",
+            "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/000/338/original/961-200.png?1552035477"
+          },
+          "first_name": "Vadim",
+          "last_name": "Malakhovski"
+        },
+        "owner": false
+      }
+    ]
+  }
+}
