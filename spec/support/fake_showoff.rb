@@ -7,6 +7,59 @@ class FakeShowoff < Sinatra::Base
     authenticate!
   end
 
+  get '/api/v1/users/:user_id' do
+    json_response 200, 'user_3424.json'
+  end
+
+  post '/api/v1/users' do
+    data = json_fixture('user_3424.json')
+
+    data[:data][:user].tap do |user|
+      user[:id] = 14771
+      user.merge! request_payload[:user].slice(
+        :first_name,
+        :last_name,
+        :password,
+        :email,
+        :image_url
+      )
+    end
+
+    data[:data][:token] = {
+      access_token: SecureRandom.hex(32),
+      token_type: "Bearer",
+      expires_in: 1.month.from_now.to_i,
+      refresh_token: SecureRandom.hex(32),
+      scope: "basic",
+      created_at: Time.current.to_i
+    }
+
+    content_type :json
+    status 200
+    data.to_json
+  end
+
+  put '/api/v1/users/:user_id' do
+    data = json_fixture('user_3424.json')
+
+    if params[:user_id] == '9999999'
+      halt 422
+    elsif params[:user_id] == '3424'
+      data[:data][:user].tap do |user|
+        user.merge! request_payload[:user].slice(
+          :first_name,
+          :last_name,
+          :date_of_birth,
+          :image_url
+        )
+      end
+    end
+
+    content_type :json
+    status 200
+    data.to_json
+  end
+
   get '/api/v1/widgets' do
     json_response 200, 'widgets.json'
   end
@@ -43,19 +96,6 @@ class FakeShowoff < Sinatra::Base
   end
 
   post '/api/v1/widgets' do
-    data = json_fixture('widget_1723.json')
-
-    data[:data][:widget].tap do |widget|
-      widget[:id] = 14771
-      widget.merge! request_payload[:widget].slice(:name, :description, :kind)
-    end
-
-    content_type :json
-    status 200
-    data.to_json
-  end
-
-  put '/api/v1/widgets' do
     data = json_fixture('widget_1723.json')
 
     data[:data][:widget].tap do |widget|

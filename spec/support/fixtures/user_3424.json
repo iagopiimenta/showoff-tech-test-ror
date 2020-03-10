@@ -1,0 +1,21 @@
+{
+  "code": 0,
+  "message": "Success",
+  "data": {
+    "user": {
+      "id": 3424,
+      "name": "John Lewis",
+      "images": {
+        "small_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/003/424/small/961-200.png?1583599163",
+        "medium_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/003/424/medium/961-200.png?1583599163",
+        "large_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/003/424/large/961-200.png?1583599163",
+        "original_url": "https://showoff-rails-react-api-production.s3.amazonaws.com/users/images/000/003/424/original/961-200.png?1583599163"
+      },
+      "first_name": "John",
+      "last_name": "Lewis",
+      "date_of_birth": null,
+      "email": "john+123@showoff.ie",
+      "active": true
+    }
+  }
+}

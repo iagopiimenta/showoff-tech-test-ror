@@ -4,22 +4,24 @@ class User
 
   attr_accessor :access_token
 
-  attr_accessor(
-    :id,
-    :name,
-    :first_name,
-    :last_name,
-    :password,
-    :email,
-    :active,
-    :image_url
-  )
+  attribute :id, :integer
+  attribute :name, :string
+  attribute :first_name, :string
+  attribute :last_name, :string
+  attribute :password, :string
+  attribute :email, :string
+  attribute :image_url, :string
+  attribute :active, :boolean
 
   attr_reader :images, :token
   attr_writer :date_of_birth
 
-  validates :password, :date_of_birth, :image_url, presence: true, on: :create
+  validates :password, presence: true, on: :create
   validates :first_name, :last_name, :email, presence: true
+
+  def self.me
+    find('me')
+  end
 
   def images=(images)
     @images = images.is_a?(Image) ? images : Image.new(images)
@@ -36,6 +38,18 @@ class User
         date_of_birth: date_of_birth,
         email: email,
         image_url: image_url
+      }
+    )
+  end
+
+  def update!
+    update(
+      id,
+      user: {
+        first_name: first_name,
+        last_name: last_name,
+        date_of_birth: date_of_birth.to_i,
+        image_url: image_url,
       }
     )
   end

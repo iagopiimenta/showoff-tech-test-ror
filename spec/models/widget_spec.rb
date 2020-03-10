@@ -74,12 +74,12 @@ RSpec.describe Widget do
         kind: "hidden"
       )
 
-      widget_created = widget.create!
+      widget.create!
 
-      expect(widget_created.id).to eq(14771)
-      expect(widget_created.name).to eq(widget.name)
-      expect(widget_created.description).to eq(widget.description)
-      expect(widget_created.kind).to eq(widget.kind)
+      expect(widget.id).to eq(14771)
+      expect(widget.name).to eq("A Hidden Widget")
+      expect(widget.description).to eq("Widget 1")
+      expect(widget.kind).to eq('hidden')
     end
   end
 
@@ -119,12 +119,12 @@ RSpec.describe Widget do
         kind: "hidden"
       )
 
-      widget_updated = widget.update!
+      widget.update!
 
-      expect(widget_updated.id).to eq(widget.id)
-      expect(widget_updated.name).to eq(widget.name)
-      expect(widget_updated.description).to eq(widget.description)
-      expect(widget_updated.kind).to eq(widget.kind)
+      expect(widget.id).to eq(1723)
+      expect(widget.name).to eq("A Visible Widget 22")
+      expect(widget.description).to eq("Widget 2222")
+      expect(widget.kind).to eq("hidden")
     end
   end
 

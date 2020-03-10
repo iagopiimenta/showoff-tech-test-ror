@@ -1,14 +1,18 @@
 class Widget
-  include ActiveModel::Model
   include ShowoffApiResource
-
-  attr_accessor :id, :name, :description, :kind, :owner
-  attr_reader :user
 
   module Kinds
     VISIBLE = 'visible'.freeze
     HIDDEN = 'hidden'.freeze
   end
+
+  attr_reader :user
+
+  attribute :id, :integer
+  attribute :name, :string
+  attribute :description, :string
+  attribute :kind, :string
+  attribute :owner, :boolean
 
   validates :id, presence: true, on: :update
   validates :kind, inclusion: { in: [Kinds::VISIBLE, Kinds::HIDDEN] }

@@ -2,13 +2,24 @@ module ShowoffApiResource
   extend ActiveSupport::Concern
 
   included do
+    include ActiveModel::Model
+    include ActiveModel::Attributes
+
+    def save!
+      if id.blank?
+        create!
+      else
+        update!
+      end
+    end
+
     def destroy!
       self.class.destroy!(id)
     end
 
     def create(params)
       if valid?(:create)
-        self.class.create!(params)
+        self.class.create!(params, self)
       else
         false
       end
@@ -16,7 +27,7 @@ module ShowoffApiResource
 
     def update(id, params)
       if valid?(:update)
-        self.class.update!(id, params)
+        self.class.update!(id, params, self)
       else
         false
       end
@@ -26,7 +37,7 @@ module ShowoffApiResource
   # rubocop:disable Metrics/BlockLength
   class_methods do
     def find(id, params = {})
-      response = client_api.get("#{plural_name}/#{id}", params)
+      $response = response = client_api.get("#{plural_name}/#{id}", params)
       convert_to_objects(response)
     end
 
@@ -45,7 +56,7 @@ module ShowoffApiResource
         )
       end
 
-      response = client_api(skip_access_token: skip_access_token).get(
+      $response = response = client_api(skip_access_token: skip_access_token).get(
         path,
         request_params
       )
@@ -53,14 +64,18 @@ module ShowoffApiResource
       convert_to_objects(response)
     end
 
-    def create!(params)
+    def create!(params, resource)
       response = client_api.post(plural_name, params)
-      convert_to_objects(response)
+      convert_to_objects(response, resource)
+
+      resource
     end
 
-    def update!(id, params)
+    def update!(id, params, resource)
       response = client_api.put("#{plural_name}/#{id}", params)
-      convert_to_objects(response)
+      convert_to_objects(response, resource)
+
+      resource
     end
 
     def destroy!(id)
@@ -74,7 +89,7 @@ module ShowoffApiResource
         self.model_name.plural
       end
 
-      def convert_to_objects(response)
+      def convert_to_objects(response, resource = nil)
         root = response.body[:data]
         token = root[:token]
 
@@ -85,10 +100,22 @@ module ShowoffApiResource
           data.map do |entry|
             klass.new(entry)
           end
-        elsif klass.is_a?(User)
-          klass.new(data).tap do |user|
-            user.token = token
+        else
+          object = reset_resource(resource, klass, data)
+          object.token = token if object.respond_to?(:token=)
+          object
+        end
+      end
+
+      def reset_resource(resource, klass, data)
+        if resource.present?
+          resource.attribute_names.each do |method_name|
+            resource.send("#{method_name}=", nil)
           end
+
+          resource.attributes = data
+
+          resource
         else
           klass.new(data)
         end
@@ -114,7 +141,7 @@ module ShowoffApiResource
 
           conn.request :json
 
-          conn.response :logger, Rails.logger, bodies: true
+          conn.response :logger, Rails.logger #, bodies: true
           conn.response :raise_error
           conn.response :json, parser_options: { symbolize_names: true }
 
