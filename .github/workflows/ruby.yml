@@ -22,3 +22,7 @@ jobs:
         gem install bundler
         bundle install --jobs 4 --retry 3
         bundle exec rake
+      env:
+        SHOWOFF_CLIENT: ${{ secrets.SHOWOFF_CLIENT }}
+        SHOWOFF_CLIENT_SECRET: ${{ secrets.SHOWOFF_CLIENT_SECRET }}
+        SHOWOFF_API_URL: ${{ secrets.SHOWOFF_API_URL }}
