@@ -33,3 +33,7 @@ yarn-debug.log*
 .DS_Store
 
 coverage
+
+docker-compose.override.yml
+
+.env.development

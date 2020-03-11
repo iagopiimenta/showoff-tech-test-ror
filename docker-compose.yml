@@ -5,24 +5,12 @@ services:
     command: sh -c 'bundle install && bundle exec rails s -b 0.0.0.0'
     user: "1000:1000"
     working_dir: /app
-    env_file:
-      - app-dev.env
     ports:
       - 3050:3000
     volumes:
       - .:/app:cached
       - ruby_2_7_0_gems:/gems
-    depends_on:
-      - postgres
-      - redis
     tty: true
     stdin_open: true
-  postgres:
-    environment:
-      - POSTGRES_USER=app
-      - POSTGRES_PASSWORD=password
-    image: postgres:12.2-alpine
-  redis:
-    image: redis:5.0.7-alpine3.11
 volumes:
   ruby_2_7_0_gems:
