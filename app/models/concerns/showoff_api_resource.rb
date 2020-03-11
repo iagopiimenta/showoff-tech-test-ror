@@ -37,7 +37,7 @@ module ShowoffApiResource
   # rubocop:disable Metrics/BlockLength
   class_methods do
     def find(id, params = {})
-      $response = response = client_api.get("#{plural_name}/#{id}", params)
+      response = client_api.get("#{plural_name}/#{id}", params)
       convert_to_objects(response)
     end
 
@@ -56,7 +56,7 @@ module ShowoffApiResource
         )
       end
 
-      $response = response = client_api(skip_access_token: skip_access_token).get(
+      response = client_api(skip_access_token: skip_access_token).get(
         path,
         request_params
       )
