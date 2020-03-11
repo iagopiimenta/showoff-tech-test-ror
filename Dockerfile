@@ -17,6 +17,13 @@ RUN apk add --no-cache --update \
   ca-certificates \
   wget
 
+ENV GEM_HOME /gems/vendor
+ENV GEM_PATH /gems/vendor
+ENV GEM_SPEC_CACHE /gems/specs
+ENV BUNDLE_APP_CONFIG /gems/vendor
+ENV BUNDLE_PATH /gems/vendor
+ENV BUNDLE_BIN /gems/vendor/bin
+
 RUN mkdir -p /gems
 
 RUN mkdir -p /gems
