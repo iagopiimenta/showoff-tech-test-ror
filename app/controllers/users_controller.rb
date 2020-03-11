@@ -1,8 +1,5 @@
 class UsersController < ApplicationController
-  # TODO
-  def new
-
-  end
+  before_action :load_session
 
   def create
     @user = User.new(user_params)
@@ -47,9 +44,12 @@ class UsersController < ApplicationController
 
     def user_params
       params.require(:user).permit(
-        :name,
-        :description,
-        :kind
+        :first_name,
+        :last_name,
+        :date_of_birth,
+        :email,
+        :password,
+        :image_url
       )
     end
 end

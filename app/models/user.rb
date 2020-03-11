@@ -12,12 +12,13 @@ class User
   attribute :email, :string
   attribute :image_url, :string
   attribute :active, :boolean
+  attribute :date_of_birth, :datetime
 
   attr_reader :images, :token
-  attr_writer :date_of_birth
 
   validates :password, presence: true, on: :create
   validates :first_name, :last_name, :email, presence: true
+  validates :password, length: { minimum: 8 }, on: :create
 
   def self.me
     find('me')
@@ -35,7 +36,7 @@ class User
         first_name: first_name,
         last_name: last_name,
         password: password,
-        date_of_birth: date_of_birth,
+        date_of_birth: date_of_birth&.to_i,
         email: email,
         image_url: image_url
       }
@@ -48,7 +49,7 @@ class User
       user: {
         first_name: first_name,
         last_name: last_name,
-        date_of_birth: date_of_birth.to_i,
+        date_of_birth: date_of_birth&.to_i,
         image_url: image_url,
       }
     )
@@ -64,9 +65,5 @@ class User
 
   def ==(other)
     self.class == other.class && self.id == other.id
-  end
-
-  def date_of_birth
-    Time.zone.at(@date_of_birth) if @date_of_birth
   end
 end
