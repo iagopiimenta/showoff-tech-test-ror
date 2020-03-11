@@ -62,6 +62,10 @@ class User
     end
   end
 
+  def ==(other)
+    self.class == other.class && self.id == other.id
+  end
+
   def date_of_birth
     Time.zone.at(@date_of_birth) if @date_of_birth
   end

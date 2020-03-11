@@ -1,6 +1,1 @@
-<%= session[:user] %>
-
-<% @widgets.each do |widget| %>
-  <%= widget.id %>
-  <%= widget.name %>
-<% end %>
+<%= render "widgets/list" %>

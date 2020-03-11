@@ -3,9 +3,16 @@ class HomeController < ApplicationController
 
   before_action :load_session
 
-  helper_method :current_user
-
   def index
-    @widgets = Widget.only_visible
+    @search_term = search_parms[:widget_term] if params[:search]
+    @widgets = Widget.only_visible(@search_term)
   end
+
+  private
+
+    def search_parms
+      params.require(:search).permit(
+        :widget_term
+      )
+    end
 end

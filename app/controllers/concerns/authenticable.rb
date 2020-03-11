@@ -15,6 +15,7 @@ module Authenticable
     end
 
     def load_session
+      Authentication.oauth2_client = ShowoffOauth.default_client
       token_data = session.dig('user', 'access_token')
 
       if token_data
@@ -24,16 +25,19 @@ module Authenticable
         Authentication.access_token = @access_token
         Authentication.oauth2_client = @access_token.client
 
-        @current_user = User.find('me')
+        @current_user = User.me
       end
     end
 
     def authenticate_user!
-      token_data = session.dig(:user, :access_token)
-      return redirect_to '/' unless token_data
+      load_session
 
-      @access_token = ShowoffOauth.new.access_token_from_session(session[:user])
-      @access_token.refresh! if @access_token.expired?
+      redirect_to root_path unless @access_token
+    end
+
+    def clean_authentication_credentials!
+      Authentication.access_token = nil
+      Authentication.oauth2_client = nil
     end
   end
 end

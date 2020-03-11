@@ -19,6 +19,14 @@ class Widget
   validates :owner, inclusion: { in: [true, false] }, allow_blank: true
   validates :name, :description, presence: true
 
+  def visible?
+    kind == Kinds::VISIBLE
+  end
+
+  def hidden?
+    kind == Kinds::HIDDEN
+  end
+
   def user=(user)
     @user = user.is_a?(User) ? user : User.new(user)
   end
