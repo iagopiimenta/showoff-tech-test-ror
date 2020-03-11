@@ -27,6 +27,10 @@ class WidgetsController < ApplicationController
     redirect_to widgets_path
   end
 
+  def new
+    @widget = Widget.new
+  end
+
   private
 
     def user_id
