@@ -6,6 +6,8 @@ class Widget
     HIDDEN = 'hidden'.freeze
   end
 
+  KINDS_AVAILABLE = [Kinds::VISIBLE, Kinds::HIDDEN]
+
   attr_reader :user
 
   attribute :id, :integer
@@ -15,7 +17,7 @@ class Widget
   attribute :owner, :boolean
 
   validates :id, presence: true, on: :update
-  validates :kind, inclusion: { in: [Kinds::VISIBLE, Kinds::HIDDEN] }
+  validates :kind, inclusion: { in: KINDS_AVAILABLE }
   validates :owner, inclusion: { in: [true, false] }, allow_blank: true
   validates :name, :description, presence: true
 

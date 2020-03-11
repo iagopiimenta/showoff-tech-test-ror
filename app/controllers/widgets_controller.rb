@@ -2,7 +2,7 @@ class WidgetsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @search_term = search_parms[:widget_term] if params[:search]
+    @search_term = search_params[:widget_term] if params[:search]
     @widgets = Widget.by_user_id(user_id, @search_term)
   end
 
@@ -17,15 +17,33 @@ class WidgetsController < ApplicationController
     @widget = Widget.find(params[:id])
   end
 
+  def update
+    widget = Widget.new(
+      widget_params.merge(id: params[:id])
+    )
+
+    widget.update!
+
+    redirect_to widgets_path
+  end
+
   private
 
     def user_id
       params[:user_id].presence || 'me'
     end
 
-    def search_parms
+    def search_params
       params.require(:search).permit(
         :widget_term
+      )
+    end
+
+    def widget_params
+      params.require(:widget).permit(
+        :name,
+        :description,
+        :kind
       )
     end
 end

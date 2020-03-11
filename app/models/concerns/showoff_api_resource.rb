@@ -5,6 +5,10 @@ module ShowoffApiResource
     include ActiveModel::Model
     include ActiveModel::Attributes
 
+    def persisted?
+      respond_to?(:id) && id.present?
+    end
+
     def save!
       if id.blank?
         create!
