@@ -18,17 +18,29 @@ class WidgetsController < ApplicationController
   end
 
   def update
-    widget = Widget.new(
+    @widget = Widget.new(
       widget_params.merge(id: params[:id])
     )
 
-    widget.update!
-
-    redirect_to widgets_path
+    if @widget.update!
+      redirect_to widgets_path
+    else
+      render 'edit'
+    end
   end
 
   def new
     @widget = Widget.new
+  end
+
+  def create
+    @widget = Widget.new(widget_params)
+
+    if @widget.create!
+      redirect_to widgets_path
+    else
+      render 'new'
+    end
   end
 
   private

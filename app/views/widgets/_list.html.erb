@@ -1,5 +1,8 @@
 <div class="container mt-5">
   <div class="row">
+    <% if @widgets.empty? %>
+      <p>No entries found.</p>
+    <% end %>
     <% @widgets.each do |widget| %>
       <div class="col-md-3">
         <div class="card mb-3 box-shadow">
